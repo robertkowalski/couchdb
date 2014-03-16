@@ -346,4 +346,5 @@ FAUXTON_FILES = \
     fauxton/test/runner.html \
     fauxton/test/test.config.underscore \
     fauxton/TODO.md \
+    fauxton/CONTRIBUTING.md \
     fauxton/writing_addons.md
