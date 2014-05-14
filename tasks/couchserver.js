@@ -62,9 +62,6 @@ module.exports = function (grunt) {
       } else if (!!url.match(/\.css|img/)) {
         url = url.replace(/\?.*/, '');
         filePath = path.join(dist_dir,url);
-      /*} else if (!!url.match(/\/js\//)) {
-        // serve any javascript or files from dist debug dir
-        filePath = path.join(dist_dir,req.url);*/
       } else if (!!url.match(/\.js$|\.html$/)) {
         // server js from app directory
         filePath = path.join(app_dir, url.replace('/_utils/fauxton/',''));
@@ -77,6 +74,10 @@ module.exports = function (grunt) {
         // serve main index file from here
         filePath = path.join(dist_dir, 'index.html');
       };
+
+      if (/_utils\/docs/.test(filePath)) {
+        filePath = false;
+      }
 
       if (filePath) {
         return send(req, filePath)
