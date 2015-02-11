@@ -27,11 +27,24 @@ clean:
 
 check: javascript eunit
 
-
+# creates a a full erlang release
 dist: all
 	@rm -rf rel/couchdb
 	@rebar generate
 	@cp -r share/www rel/couchdb/share/www
+
+# creates a source tarball
+release:
+	./build-aux/couchdb-build-release.sh
+
+	# build fauxton
+	$(MAKE) fauxton
+	cp -r share/www apache-couchdb/share/
+
+	# build docs
+	cd src/docs; make
+	mkdir apache-couchdb/share/docs
+	cp -r src/docs/build/html apache-couchdb/share/docs/html
 
 distclean: clean
 	@rm -rf rel/couchdb
