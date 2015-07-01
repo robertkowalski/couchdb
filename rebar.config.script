@@ -22,7 +22,7 @@ DepDescs = [
     {couch_log,         {url, "https://github.com/robertkowalski/couchdb-couch-log"},        {branch, "book-couch-not-optimized"}},
     {config,            "config",           "d4a17837092467ca83eef1bb5d9327d6d69b0b55"},
     {chttpd,            "chttpd",           "e7f9ed83da8e77aeaf8b140344280e990b0580ad"},
-    {couch,             "couch",            "c2ef37211cfaa75dfdd2e0f30252afac67ae3db7"},
+    {couch,             "couch",            "529339b6c326cea998129198b1373f31caed66f0"},
     {couch_index,       "couch-index",      "e15bed80e21e573c05945c23908dc0c7194ef8e9"},
     {couch_mrview,      "couch-mrview",     "1dc8d5252d8fbaa9df56ee63800fa616c154602e"},
     {couch_replicator,  "couch-replicator", "cfda5357a3d5833613eeca64114131fd406ad5f1"},
@@ -48,7 +48,8 @@ DepDescs = [
     {rexi,              "rexi",             "a327b7dbeb2b0050f7ca9072047bf8ef2d282833"},
     {snappy,            "snappy",           "347a8d73029f8dfc01c063068f903931361fc835"},
     {setup,             "setup",            "aa17a557bb6ad207c1d4e42d0e74ef81f1d45f2c"},
-    {meck,              "meck",             {tag, "0.8.2"}}
+    {meck,              "meck",             {tag, "0.8.2"}},
+    {eflame,            {url, "https://github.com/proger/eflame"}, "b87703d65590f05069be42eb9ef74040d3c7ecdc"}
 ],
 
 BaseUrl = "https://git-wip-us.apache.org/repos/asf/",
