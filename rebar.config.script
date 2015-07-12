@@ -22,7 +22,7 @@ DepDescs = [
     {couch_log,         {url, "https://github.com/robertkowalski/couchdb-couch-log"},        {branch, "book-couch-not-optimized"}},
     {config,            "config",           "d4a17837092467ca83eef1bb5d9327d6d69b0b55"},
     {chttpd,            "chttpd",           "e7f9ed83da8e77aeaf8b140344280e990b0580ad"},
-    {couch,             "couch",            "529339b6c326cea998129198b1373f31caed66f0"},
+    {couch,             {url, "https://github.com/robertkowalski/couchdb-couch"},        {branch, "book-couch-not-optimized"}},
     {couch_index,       "couch-index",      "e15bed80e21e573c05945c23908dc0c7194ef8e9"},
     {couch_mrview,      "couch-mrview",     "1dc8d5252d8fbaa9df56ee63800fa616c154602e"},
     {couch_replicator,  "couch-replicator", "cfda5357a3d5833613eeca64114131fd406ad5f1"},
