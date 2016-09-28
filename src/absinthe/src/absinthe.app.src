@@ -1,0 +1,11 @@
+{application, absinthe,
+[{description, "absinthe"},
+ {vsn, "1.3.3"},
+ {modules, [
+  absinthe
+  ]},
+ {registered, []},
+ {applications, [kernel,stdlib,compiler,logger,elixir]},
+ {mod, {absinthe,[]}},
+ {env, [{ansi_enabled, false}]}
+]}.
