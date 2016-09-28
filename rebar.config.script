@@ -59,7 +59,7 @@ DepDescs = [
 {meck,             "meck",             {tag, "0.8.2"}},
 {rebar_elixir_plugin, {url, "https://github.com/yrashk/rebar_elixir_plugin"}, "7058379b7c7e017555647f6b9cecfd87cd50f884"},
 {elixir,              {url, "https://github.com/elixir-lang/elixir"}, {tag, "v1.3.3"}},
-{absinthe,            {url, "https://github.com/absinthe-graphql/absinthe"}, {tag, "v1.1.9"}, [raw]}
+{absinthe,            {url, "https://github.com/absinthe-graphql/absinthe"}, {tag, "v1.1.9"}}
 ],
 
 BaseUrl = "https://git-wip-us.apache.org/repos/asf/",
@@ -82,7 +82,7 @@ AddConfig = [
     {deps_dir, "src"},
     {deps, lists:map(MakeDep, DepDescs)},
     {sub_dirs, ["rel"]},
-    {lib_dirs, ["src/", "src/*/lib"]},
+    {lib_dirs, ["src/", "src/*/lib", "src/elixir/lib", "/Users/robert/apache/couchdb/src/elixir/lib/elixir"]},
     {erl_opts, [debug_info]},
     {eunit_opts, [verbose]},
     {plugins, [eunit_plugin, rebar_elixir_compiler, rebar_exunit]},

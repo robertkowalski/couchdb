@@ -64,6 +64,7 @@ help:
 .PHONY: couch
 # target: couch - Build CouchDB core
 couch: config.erl
+	@rm -rf src/elixir/lib/mix/test/fixtures
 	@rm -rf src/elixir/lib/elixir/test/elixir/fixtures/
 	@COUCHDB_VERSION=$(COUCHDB_VERSION) $(REBAR) compile
 	@cp src/couch/priv/couchjs bin/
